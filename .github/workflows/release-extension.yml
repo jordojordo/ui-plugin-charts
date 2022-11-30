@@ -2,9 +2,9 @@ name: Release Extension
 
 on:
   push:
-    # branches: [main]
-    # paths:
-    #   - 'index.yaml'
+    branches: [main]
+    paths:
+      - 'index.yaml'
     
 env:
   ACTIONS_RUNNER_DEBUG: false
