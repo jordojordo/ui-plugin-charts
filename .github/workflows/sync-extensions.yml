@@ -5,8 +5,8 @@ on:
     branches:
       - main
       - sync-updates # testing
-    paths:
-      - manifest.json
+    # paths:
+      # - manifest.json
 
 env:
   ACTIONS_RUNNER_DEBUG: false
@@ -42,7 +42,7 @@ jobs:
         id: sync_script
         run: |
           chmod +x ./scripts/sync
-          ./scripts/sync
+          ./scripts/sync -c
 
       - name: Commit build
         run: |
