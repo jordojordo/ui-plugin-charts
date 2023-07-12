@@ -1,5 +1,47 @@
 apiVersion: v1
 entries:
+  elemental:
+  - annotations:
+      catalog.cattle.io/certified: rancher
+      catalog.cattle.io/kube-version: '>= 1.16.0-0 < 1.26.0-0'
+      catalog.cattle.io/namespace: cattle-ui-plugin-system
+      catalog.cattle.io/os: linux
+      catalog.cattle.io/permits-os: linux, windows
+      catalog.cattle.io/rancher-version: '>= 2.7.0-0 < 2.8.0-0'
+      catalog.cattle.io/scope: management
+      catalog.cattle.io/ui-component: plugins
+    apiVersion: v2
+    appVersion: 1.2.0
+    created: "2023-07-12T19:18:08.640461569Z"
+    description: OS Management extension
+    digest: 53b47b92836e4860c5b7a2157b01fc4df7944e3c1021147c401dd5bf0666bf05
+    icon: https://raw.githubusercontent.com/rancher/ui-plugin-charts/main/icons/elemental/1.2.0-icon-v2.svg
+    name: elemental
+    type: application
+    urls:
+    - https://github.com/jordojordo/ui-plugin-charts/releases/download/elemental-1.2.0/elemental-1.2.0.tgz
+    version: 1.2.0
+  - annotations:
+      catalog.cattle.io/certified: rancher
+      catalog.cattle.io/kube-version: '>= 1.16.0-0 < 1.26.0-0'
+      catalog.cattle.io/namespace: cattle-ui-plugin-system
+      catalog.cattle.io/os: linux
+      catalog.cattle.io/permits-os: linux, windows
+      catalog.cattle.io/rancher-version: '>= 2.7.0-0 < 2.8.0-0'
+      catalog.cattle.io/scope: management
+      catalog.cattle.io/ui-component: plugins
+      catalog.cattle.io/ui-version: <= 2.7.1
+    apiVersion: v2
+    appVersion: 1.0.0
+    created: "2023-07-12T19:18:08.450407802Z"
+    description: OS Management plugin
+    digest: 8136c6a0d91fa0c9709fb73b53f1f8bbaccf33e47cb6e493d7844ce90aca3354
+    icon: https://raw.githubusercontent.com/rancher/ui-plugin-charts/main/icons/elemental/1.0.0-icon.svg
+    name: elemental
+    type: application
+    urls:
+    - https://github.com/jordojordo/ui-plugin-charts/releases/download/elemental-1.0.0/elemental-1.0.0.tgz
+    version: 1.0.0
   kubewarden:
   - annotations:
       catalog.cattle.io/certified: rancher
@@ -61,4 +103,4 @@ entries:
     urls:
     - https://github.com/jordojordo/ui-plugin-charts/releases/download/kubewarden-0.1.7/kubewarden-0.1.7.tgz
     version: 0.1.7
-generated: "2022-11-30T14:30:25.86490259Z"
+generated: "2023-07-12T19:18:08.640476369Z"
